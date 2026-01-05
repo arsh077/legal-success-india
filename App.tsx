@@ -33,6 +33,7 @@ const App: React.FC = () => {
           <Route path="/services" element={<ServicesOverview />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="/apply-license" element={<ApplicationLicense />} />
+          <Route path="/apply-license-form" element={<ApplicationLicenseForm />} />
           <Route path="/renew-license" element={<ApplicationRenewal />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
@@ -55,3 +56,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
