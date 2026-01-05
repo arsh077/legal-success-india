@@ -17,6 +17,11 @@ import RefundPolicy from './pages/RefundPolicy';
 import Compliance from './pages/Compliance';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import ApplicationLicenseForm from './pages/ApplicationLicenseForm';
+import ThankYou from './pages/ThankYou';
+import ThankYouContact from './pages/ThankYouContact';
+import ThankYouRenewal from './pages/ThankYouRenewal';
+import CRMDashboard from './pages/CRMDashboard';
 
 const App: React.FC = () => {
   return (
@@ -38,6 +43,11 @@ const App: React.FC = () => {
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/apply-license-form" element={<ApplicationLicenseForm />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/thank-you-contact" element={<ThankYouContact />} />
+          <Route path="/thank-you-renewal" element={<ThankYouRenewal />} />
+          <Route path="/crm" element={<CRMDashboard />} />
         </Routes>
       </Layout>
     </Router>
