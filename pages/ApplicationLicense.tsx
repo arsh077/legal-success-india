@@ -1,8 +1,10 @@
 
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, LayoutGrid, Building2, HelpCircle, Check } from 'lucide-react';
 
 const ApplicationLicense: React.FC = () => {
+  const navigate = useNavigate();
   // Automatic scroll to form on page load
   useEffect(() => {
     const timer = setTimeout(() => {

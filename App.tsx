@@ -19,7 +19,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import ApplicationLicenseForm from './pages/ApplicationLicenseForm';
 import ThankYou from './pages/ThankYou';
-import CRMDashboard from './pages/CRMDashboard';
+import CRMDashboard from './pages/CRMDashboard';\nimport ThankYouContact from './pages/ThankYouContact';\nimport ThankYouRenewal from './pages/ThankYouRenewal';
 
 const App: React.FC = () => {
   return (
@@ -43,6 +43,8 @@ const App: React.FC = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/thank-you-contact" element={<ThankYouContact />} />
+          <Route path="/thank-you-renewal" element={<ThankYouRenewal />} />
           <Route path="/crm" element={<CRMDashboard />} />
         </Routes>
       </Layout>
@@ -51,3 +53,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
